@@ -1,7 +1,12 @@
 package br.com.alura.forum.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+
+@Entity
 public class Usuario {
 
+	@GeneratedValue
 	private Long id;
 	private String nome;
 	private String email;
